@@ -1,2 +1,8 @@
-# Mi primer README
-My first repository on GitHub.
+# Práctica de desarrollo web
+
+Este repositorio es para exponer los proyectos de desarrollo web que realice a manera de práctica. Cualquier comentario o sugerencia siempre es bienvenido.
+
+De momento las tecnologías que estaré usando son:
+* HTML
+* CSS
+* JavaScript
