@@ -23,6 +23,7 @@ const apiRick = async () => {
         .then((characters) => {
             for(let character of characters) {
                 listCharapter.push(character);
+                render();
             }
         })
 };
@@ -136,10 +137,9 @@ const render = () => {
     showHideBtns();
 };
 
-/* Realiza la llamada a la api y renderiza los elementos. */
+/* Realiza la llamada a la api */
 window.addEventListener('load', () => {
     apiRick();
-    render();
 });
 
 /* Añade el evento a los botones de desplazamiento. */
