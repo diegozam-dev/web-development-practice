@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <!-- My stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-list">
+            <h1>To-do List</h1>
+    
+            <div class="todo-list__form">
+                <input type="text" class="form__imput" id="todo-form__input" placeholder="Write something to do...">
+                <button class="btn-add">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-plus" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M12 5l0 14"></path>
+                        <path d="M5 12l14 0"></path>
+                    </svg>
+                </button>
+            </div>
+    
+            <div class="todo-list__separator"></div>
+    
+            <div class="todo-list__tasks-uncompleted">
+                <h2>Tasks</h2>
+                <div class="tasks-content" id="tasks-uncompleted">
+                    <div class="task task-uncompleted">
+                        <input type="checkbox" class="task__check">
+                        <span class="task__span">Lorem, ipsum dolor.</span>
+                        <button class="btn-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M18 6l-12 12"></path>
+                                <path d="M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="task task-uncompleted">
+                        <input type="checkbox" class="task__check">
+                        <span class="task__span">Lorem, ipsum.</span>
+                        <button class="btn-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M18 6l-12 12"></path>
+                                <path d="M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="task task-uncompleted">
+                        <input type="checkbox" class="task__check">
+                        <span class="task__span">Lorem, ipsum dolor.</span>
+                        <button class="btn-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M18 6l-12 12"></path>
+                                <path d="M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="todo-list__separator"></div>
+    
+            <div class="todo-list__tasks-completed">
+                <div class="tasks-content" id="tasks-completed">
+                    <h2 id="tasks-counted">Completed (3/6)</h2>
+                    <div class="task task-completed">
+                        <input type="checkbox" class="task__check" checked>
+                        <span class="task__span">Lorem, ipsum dolor.</span>
+                        <button class="btn-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M18 6l-12 12"></path>
+                                <path d="M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="task task-completed">
+                        <input type="checkbox" class="task__check" checked>
+                        <span class="task__span">Lorem, ipsum.</span>
+                        <button class="btn-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M18 6l-12 12"></path>
+                                <path d="M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="task task-completed">
+                        <input type="checkbox" class="task__check" checked>
+                        <span class="task__span">Lorem, ipsum dolor.</span>
+                        <button class="btn-delete">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M18 6l-12 12"></path>
+                                <path d="M6 6l12 12"></path>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-modal">
+            <div class="modal-delete">
+                <h2>Are you sure to delete the task?</h2>
+                <div class="modal-delete__btns">
+                    <button id="btn-accept">Accept</button>
+                    <button id="btn-cancel">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- My script -->
+    <script src="./index.js"></script>
+</body>
+</html>
