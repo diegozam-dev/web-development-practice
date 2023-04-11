@@ -1,3 +1,4 @@
+/* Variables de elementos */
 const navItems = document.querySelector('.nav__items');
 const navBtnOpen = document.querySelector('#nav__btn-open');
 const navBtnClose = document.querySelector('#nav__btn-close');
@@ -14,6 +15,7 @@ const hideMenu = () => {
     navBtnOpen.style.display = 'flex';
 }
 
+/* Función que resetea los elementos del menú */
 const resetNavAndBtns = () => {
     if(window.innerWidth > 768) {
         navBtnOpen.style.removeProperty('display');
@@ -22,6 +24,7 @@ const resetNavAndBtns = () => {
     }
 }
 
+/* Eventos */
 window.addEventListener('resize', resetNavAndBtns);
 navBtnOpen.addEventListener('click', showMenu);
 navBtnClose.addEventListener('click', hideMenu);

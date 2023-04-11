@@ -22,16 +22,17 @@ body {
 }
 
 nav {
-    position: sticky;
+    position: fixed;
     top: 0;
-    max-width: 1800px;
+    width: 100vw;
     height: 80px;
-    margin: 0 auto;
-    transition: var(--transition);
 }
 
 .content__nav {
+    width: 100%;
+    max-width: 1800px;
     height: 100%;
+    margin: 0 auto;
     padding: 0 1.5rem;
     background-color: #1C3879;
     display: flex;
@@ -61,10 +62,6 @@ nav {
     transition: var(--transition);
 }
 
-.nav__items li a:hover {
-    color: #c4c3c3;
-}
-
 .nav__items li a::after {
     content: '';
     position: absolute;
@@ -80,7 +77,6 @@ nav {
 
 .nav__items li a:hover::after {
     width: 100%;
-    background-color: #c4c3c3;
 }
 
 .nav__btn {
@@ -93,10 +89,6 @@ nav {
     justify-content: center;
     cursor: pointer;
     transition: var(--transition);
-}
-
-.nav__btn:hover {
-    background-color: #c4c3c33b;
 }
 
 .nav__btn:active {
@@ -117,6 +109,7 @@ nav {
         background-color: #1C3879;
         flex-direction: column;
         gap: 0;
+        overflow: auto;
         transition: var(--transition);
     }
 
@@ -129,25 +122,13 @@ nav {
         transition: var(--transition);
     }
 
-    .nav__items li:hover {
-        background-color: #2f4986;
-    }
-
     .nav__items li:active {
         transform: scale(.9, .9);
-        background-color: #1C3879;
-    }
-
-    .nav__items li a:hover {
-        color: #F9F5EB;
+        background-color: #2f4986;
     }
 
     .nav__items li a::after {
         width: 100%;
-    }
-
-    .nav__items li a:hover::after {
-        background-color: #F9F5EB;
     }
 
     #nav__btn-open {
