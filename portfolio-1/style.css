@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Roboto:wght@500;700&display=swap');
+
+:root {
+    --font-family-title: 'Nunito', sans-serif;
+    --font-family-text: 'Roboto', sans-serif;
+}
+
+body {
+
+}
