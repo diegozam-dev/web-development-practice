@@ -1,10 +1,83 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600&family=Roboto:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&family=Roboto:wght@700;900&display=swap');
 
 :root {
-    --font-family-title: 'Nunito', sans-serif;
-    --font-family-text: 'Roboto', sans-serif;
+    --font-family-title: 'Roboto', sans-serif;
+    --font-family-text: 'Nunito', sans-serif;
+
+    --color-primary-900: #100F0F;
+    --color-primary-850: #141313;
+    --color-primary-800: #1a1818;
+    --color-contrast: #cf1020;
+    --color-text: #ffffff;
+
+    --container-width-md: 90%;
+    --container-width-lg: 80%;
+
+    --border-radius: .2rem:
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    border: none;
+    appearance: none;
+    list-style: none;
+    text-decoration: none;
 }
 
 body {
-
+    min-height: 100vh;
+    font-size: 16px;
+    background: linear-gradient(
+        200deg, 
+        #2b2b2b, 
+        #100F0F 30%);
 }
+
+/* ------------------ ELEMENTS ------------------ */
+
+h1 {
+    font-family: var(--font-family-title);
+    font-size: 2rem;
+    font-weight: 900;
+}
+
+h2 {
+    font-family: var(--font-family-title);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-family: var(--font-family-title);
+    font-size: 1.25;
+    font-weight: 700;
+}
+
+.text {
+    font-family: var(--font-family-text);
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.know-more {
+    font-size: 1.1;
+    font-weight: 600;
+}
+
+.text--red {
+    color: var(--color-contrast);
+}
+
+.text--white {
+    color: var(--color-text);
+}
+
+.container {
+    width: 100vw;
+}
+
+/* ------------------ NAV ------------------ */
+
+
