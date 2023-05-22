@@ -9,10 +9,10 @@
 </head>
 <body>
     <nav>
-        <div class="container container__nav">
-            <div class="nav__logo">
+        <div class="container nav__container">
+            <a class="nav__logo flex--center" href="#">
                 <img src="./assets/svg/logo.svg" alt="Logo">
-            </div>
+            </a>
 
             <ul class="nav__menu">
                 <li class="menu__item"><a class="text text--white" href="#">HOME</a></li>
@@ -20,8 +20,126 @@
                 <li class="menu__item"><a class="text text--white" href="#">ABOUT</a></li>
                 <li class="menu__item"><a class="text text--white" href="#">CONTACT</a></li>
             </ul>
+
+            <button class="nav__btn-menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </button>
         </div>
     </nav>
+
+    <section class="welcome">
+        <div class="container welcome__container">
+            <div class="welcome__avatar flex--center">
+                <img src="./assets/img/girl.png" alt="Avatar">
+            </div>
+
+            <div class="welcome__description">
+                <span class="text text--contrast">Hello I'm Ellie</span>
+                <h1 class="text--white">Visual Designer</h1>
+                <p class="text text--gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus minima quaerat eum obcaecati ut vero.</p>
+                <button class="btn-cta">ABOUT ME</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container about__container">
+            <div class="about__background-block"></div>
+
+            <ul class="about__skills">
+                <li>
+                    <img src="./assets/svg/ui-design.svg" alt="Logo UI Design">
+                    <h3 class="text--white">UI Design</h3>
+                    <p class="text text--gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam.</p>
+                    <a class="know-more text--contrast" href="#">KNOW MORE <img src="./assets/svg/arrow-right-red.svg" alt="Arrow red"></a>
+                </li>
+                
+                <li>
+                    <img src="./assets/svg/product-design.svg" alt="Logo Product Design">
+                    <h3 class="text--white">Product Design</h3>
+                    <p class="text text--white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam.</p>
+                    <a class="know-more text--contrast" href="#">KNOW MORE <img src="./assets/svg/arrow-right-white.svg" alt="Arrow red"></a>
+                </li>
+
+                <li>
+                    <img src="./assets/svg/branding.svg" alt="Logo Branding">
+                    <h3 class="text--white">Branding</h3>
+                    <p class="text text--gray">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquam.</p>
+                    <a class="know-more text--contrast" href="#">KNOW MORE <img src="./assets/svg/arrow-right-red.svg" alt="Arrow red"></a>
+                </li>
+            </ul>
+
+            <div class="about__experience">
+                <div class="experience__years">
+                    <span class="text--contrast">12</span>
+                    <p class="text--white">Years Experience</p>
+                </div>
+                <div class="experience__clients">
+                    <span class="text--contrast">60+</span>
+                    <p class="text--gray">Clients</p>
+                </div>
+                <div class="experience__years2">
+                    <span class="text--contrast">08</span>
+                    <p class="text--gray">Years Experience</p>
+                </div>
+                <div class="experience__projects">
+                    <span class="text--contrast">122+</span>
+                    <p class="text--gray">Completed Projects</p>
+                </div>
+                <div class="experience__achievements">
+                    <span class="text--contrast">10</span>
+                    <p class="text--gray">Achievements</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects">
+        <div class="container projects__container">
+            <header class="projects__header">
+                <div>
+                    <h2 class="text--white">FEATURED PROJECTS</h2>
+                    <P class="text text--gray">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</P>
+                </div>
+
+                <a class="btn-cta" href="#">VIEW ALL</a>
+            </header>
+
+            <ul class="projects__content">
+                <li>
+                    <div class="img">
+                        <img src="./assets/img/vintage.jpg" alt="The Vintage">
+                    </div>
+                    <h3 class="text--white">The Vintage</h3>
+                    <a class="know-more text--contrast" href="#">KNOW MORE <img src="./assets/svg/arrow-right-red.svg" alt=""></a>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/img/foodasa.jpg" alt="Foodosa">
+                    </div>
+                    <h3 class="text--white">Foodasa</h3>
+                    <a class="know-more text--contrast" href="#">KNOW MORE <img src="./assets/svg/arrow-right-red.svg" alt=""></a>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/img/marco-accent.jpg" alt="Marco Accent">
+                    </div>
+                    <h3 class="text--white">Marco Accent</h3>
+                    <a class="know-more text--contrast" href="#">KNOW MORE <img src="./assets/svg/arrow-right-red.svg" alt=""></a>
+                </li>
+                <li>
+                    <div>
+                        <img src="./assets/img/mozaik.jpg" alt="Mozaik">
+                    </div>
+                    <h3 class="text--white">Mozaik</h3>
+                    <a class="know-more text--contrast" href="#">KNOW MORE <img src="./assets/svg/arrow-right-red.svg" alt=""></a>
+                </li>
+            </ul>
+        </div>
+    </section>
+
 
 
     <script src="./index.js"></script>
