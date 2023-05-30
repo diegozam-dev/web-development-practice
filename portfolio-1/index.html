@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <nav class="nav-principal">
+    <nav id="nav-principal" class="flex--center">
         <div class="container nav-principal__container">
             <a class="nav-principal__logo flex--center" href="#">
                 <img src="./assets/svg/logo.svg" alt="Logo">
@@ -29,14 +29,14 @@
         </div>
     </nav>
 
-    <section class="welcome">
-        <div class="container welcome__container">
-            <div class="welcome__avatar flex--center">
+    <section id="welcome">
+        <div class="container welcome__container flex--center">
+            <div class="welcome__avatar">
                 <img src="./assets/img/girl.png" alt="Avatar">
             </div>
 
             <div class="welcome__description">
-                <span class="text text--contrast">Hello I'm Ellie</span>
+                <p class="text text--contrast">Hello I'm Ellie</p>
                 <h1 class="text--white font-title">Visual Designer</h1>
                 <p class="text text--gray">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Delectus minima quaerat eum obcaecati ut vero.</p>
                 <button class="btn-cta">ABOUT ME</button>

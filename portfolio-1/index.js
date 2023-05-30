@@ -1,4 +1,4 @@
-const navPrincipal = document.querySelector('.nav-principal');
+const navPrincipal = document.querySelector('#nav-principal');
 const navPrincipalBtnMenu = document.querySelector('.nav-principal__btn-menu');
 const navFooter = document.querySelector('.nav-footer');
 const footer = document.querySelector('footer');
@@ -14,9 +14,6 @@ window.addEventListener('scroll', (e) => {
     let posNavFooter = navFooter.getBoundingClientRect().height;
     let posFooter = footer.getBoundingClientRect().height;
     
-    console.log(document.body.clientHeight - window.scrollY)
-    console.log(window.scrollY)
-    console.log(document.body.clientHeight);
 
     if(window.scrollY > 49 && window.scrollY < document.body.clientHeight - 617 - posNavFooter - posFooter) {
         navPrincipal.style.position = 'sticky';

@@ -128,7 +128,7 @@ h3 {
 
 .container {
     width: var(--container-width-lg);
-    max-width: 1800px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -144,7 +144,7 @@ nav {
 
 /* ------------------ NAV ------------------ */
 
-.nav-principal {
+#nav-principal {
     transition: var(--transition);
     z-index: 50;
 }
@@ -185,7 +185,7 @@ nav {
     width: 1.8rem;
     height: 1.5rem;
     background-color: transparent;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: space-between;
     cursor: pointer;
@@ -212,40 +212,36 @@ nav {
 
 /* ------------------ WELCOME SECTION ------------------ */
 
-.welcome {
+#welcome {
     margin-top: 4rem;
-}
-
-.welcome__container {
-    height: 100%;
-    display: flex;
 }
 
 .welcome__avatar {
     width: 40%;
     height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .welcome__avatar img {
-    width: 80%;
     min-width: 300px;
-    height: 80%;
+    width: 80%;
+    max-width: 350px;
     min-height: 300px;
+    height: 80%;
 }
 
 .welcome__description {
+    max-width: 500px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
 }
 
-.welcome__description span {
+.welcome__description p:first-child {
     font-weight: 800;
-}
-
-.welcome__description p {
-    width: 90%;
 }
 
 .welcome__description .btn-cta {
