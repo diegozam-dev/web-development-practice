@@ -1,19 +1,36 @@
-const nav = document.querySelector('nav');
-const navBtnMenu = document.querySelector('.nav__btn-menu');
+const navPrincipal = document.querySelector('.nav-principal');
+const navPrincipalBtnMenu = document.querySelector('.nav-principal__btn-menu');
+const navFooter = document.querySelector('.nav-footer');
+const footer = document.querySelector('footer');
 
-navBtnMenu.addEventListener('click', () => {
-    navBtnMenu.classList.toggle('menu--open');
+navPrincipalBtnMenu.addEventListener('click', () => {
+    navPrincipalBtnMenu.classList.toggle('menu--open');
 });
 
 window.addEventListener('scroll', (e) => {
-    if(window.scrollY > 49) {
-        nav.style.position = 'sticky';
-        nav.style.top = '0';
-        nav.style.backgroundColor = 'var(--color-primary-900)';
+
+    // console.log(navFooter.getBoundingClientRect().height)
+    
+    let posNavFooter = navFooter.getBoundingClientRect().height;
+    let posFooter = footer.getBoundingClientRect().height;
+    
+    console.log(document.body.clientHeight - window.scrollY)
+    console.log(window.scrollY)
+    console.log(document.body.clientHeight);
+
+    if(window.scrollY > 49 && window.scrollY < document.body.clientHeight - 617 - posNavFooter - posFooter) {
+        navPrincipal.style.position = 'sticky';
+        navPrincipal.style.top = '0';
+        navPrincipal.style.backgroundColor = 'var(--color-primary-900)';
         return;
     }
 
-    nav.style.removeProperty('position');
-    nav.style.removeProperty('top');
-    nav.style.removeProperty('background-color');
-})
+
+
+    navPrincipal.style.removeProperty('position');
+    navPrincipal.style.removeProperty('top');
+    navPrincipal.style.removeProperty('background-color');
+});
+
+
+
