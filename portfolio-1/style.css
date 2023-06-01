@@ -33,6 +33,7 @@
 
 body {
     min-height: 100vh;
+    min-width: 100vw;
     font-size: 16px;
     background: linear-gradient(
         200deg, 
@@ -185,7 +186,7 @@ nav {
     width: 100%;
 }
 
-.nav-principal__btn-menu {
+#nav-principal__btn-menu {
     width: 1.8rem;
     height: 1.5rem;
     background-color: transparent;
@@ -195,7 +196,7 @@ nav {
     cursor: pointer;
 }
 
-.nav-principal__btn-menu div {
+#nav-principal__btn-menu div {
     width: 100%;
     height: .2rem;
     background-color: var(--color-light);
