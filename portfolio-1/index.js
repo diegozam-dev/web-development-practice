@@ -1,10 +1,12 @@
 const navPrincipal = document.querySelector('#nav-principal');
 const navPrincipalBtnMenu = document.querySelector('#nav-principal__btn-menu');
+const navPrincipalMenu = document.querySelector('.nav-principal__menu');
 const navFooter = document.querySelector('#nav-footer');
 const footer = document.querySelector('footer');
 
 navPrincipalBtnMenu.addEventListener('click', () => {
-    navPrincipalBtnMenu.classList.toggle('menu--open');
+    navPrincipalBtnMenu.classList.toggle('btn-menu-open');
+    navPrincipalMenu.classList.toggle('menu-open')
 });
 
 window.addEventListener('scroll', (e) => {    
