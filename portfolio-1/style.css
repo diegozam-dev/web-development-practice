@@ -426,8 +426,13 @@ nav {
 
 /* ------------------ NAV FOOTER ------------------ */
 
-.nav-footer__container {
+#nav-footer {
     margin-top: 3rem;
+}
+
+.nav-footer__container {
+    height: 100%;
+    width: 100%;
 }
 
 .nav-footer__menu {
