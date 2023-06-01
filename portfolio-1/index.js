@@ -1,6 +1,6 @@
 const navPrincipal = document.querySelector('#nav-principal');
 const navPrincipalBtnMenu = document.querySelector('#nav-principal__btn-menu');
-const navFooter = document.querySelector('.nav-footer');
+const navFooter = document.querySelector('#nav-footer');
 const footer = document.querySelector('footer');
 
 navPrincipalBtnMenu.addEventListener('click', () => {
