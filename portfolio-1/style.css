@@ -497,8 +497,14 @@ footer {
 
 /* ------------------ RESPONSIVE ------------------ */
 
-@media (max-width: 767px) {
+@media (max-width: 1000px) {
+    .projects__content {
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
 
+    .projects__element {
+        align-items: center;
+    }
 }
 
 @media (max-width: 767px) {
@@ -554,5 +560,42 @@ footer {
     .welcome__description {
         align-items: center;
         text-align: center;
+    }
+
+    .projects__header {
+        flex-direction: column;
+    }
+
+    .header__content {
+        text-align: center;
+        margin-bottom: 2rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    .projects__header .btn-cta {
+        margin-bottom: 1rem;
+    }
+
+    .projects__content {
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    }
+
+}
+
+@media (max-width: 450px) {
+    .projects__content {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .element-img__container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .element-img__container img {
+        box-shadow: none;
     }
 }
