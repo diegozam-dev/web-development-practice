@@ -113,9 +113,7 @@ h3 {
     font-size: .8rem;
     font-weight: 400;
     letter-spacing: 3px;
-    text-align: center;
-    width: 150px;
-    padding: 1rem 0;
+    padding: 1rem 2rem;
     border-radius: var(--border-radius);
     background-color: var(--color-contrast);
     color: var(--color-light);
@@ -432,12 +430,17 @@ nav {
 
 .contact__container {
     position: relative;
+    min-width: 250px;
     padding: 2.5rem 2rem;
     background-color: var(--color-primary-800);
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 10;
+}
+
+.contact__text {
+    margin-right: 2rem;
 }
 
 .contact__text h2 {
@@ -498,6 +501,8 @@ footer {
 /* ------------------ RESPONSIVE ------------------ */
 
 @media (max-width: 1000px) {
+    /* ------------------ PROJECTS SECTION ------------------ */
+
     .projects__content {
         grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     }
@@ -508,6 +513,7 @@ footer {
 }
 
 @media (max-width: 767px) {
+    /* ------------------ ELEMENTS ------------------ */
     .container {
         width: 100%;
     }
@@ -515,6 +521,8 @@ footer {
     section {
         width: var(--container-width-lg);
     }
+
+    /* ------------------ NAV PRINCIPAL ------------------ */
 
     #nav-principal {
         background-color: var(--color-primary-900);
@@ -551,6 +559,8 @@ footer {
         display: flex;
     }
 
+    /* ------------------ WELCOME SECTION ------------------ */
+
     .welcome__container {
         flex-direction: column;
         justify-content: flex-start;
@@ -561,6 +571,8 @@ footer {
         align-items: center;
         text-align: center;
     }
+
+    /* ------------------ PROJECTS SECTION ------------------ */
 
     .projects__header {
         flex-direction: column;
@@ -579,13 +591,28 @@ footer {
         margin-bottom: 1rem;
     }
 
+    /* ------------------ CONTACT SECTION ------------------ */
+
     .projects__content {
         grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     }
 
+
+    .contact__container {
+        flex-direction: column;
+        justify-content: flex-start;
+        gap: 2rem;
+    }
+
+    .contact__text {
+        text-align: center;
+        margin-right: 0;
+    }
 }
 
 @media (max-width: 450px) {
+     /* ------------------ PROJECTS SECTION ------------------ */
+
     .projects__content {
         grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     }
