@@ -31,6 +31,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     min-height: 100vh;
     min-width: 100vw;
@@ -129,7 +133,7 @@ h3 {
 
 .container {
     width: var(--container-width-lg);
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
 }
 
@@ -222,13 +226,14 @@ nav {
 }
 
 .welcome__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
     gap: 2rem;
 }
 
 .welcome__avatar {
-    min-width: 250px;
-    width: 40%;
-    max-width: 350px;
+    width: 50%;
     height: 100%;
     display: flex;
     align-items: center;
@@ -236,12 +241,13 @@ nav {
 }
 
 .welcome__avatar img {
-    width: 100%;
+    min-width: 300px;
+    max-width: 350px;
+
 }
 
 .welcome__description {
     width: 60%;
-    /* max-width: 500px; */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -251,6 +257,14 @@ nav {
 
 .welcome__description p:first-child {
     font-weight: 800;
+}
+
+.welcome__description p {
+    max-width: 550px;
+}
+
+.welcome__description h1 {
+    margin-bottom: 1rem;
 }
 
 .welcome__description .btn-cta {
@@ -278,13 +292,14 @@ nav {
 }
 
 .about__skills {
-    display: flex;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     z-index: 10;
 }
 
 .about__skills li {
-    min-width: 250px;
     padding: 2rem;
     background-color: var(--color-primary-800);
     border-radius: var(--border-radius);
@@ -308,7 +323,7 @@ nav {
 
 .about__experience {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
     z-index: 10;
 }
@@ -480,9 +495,11 @@ footer {
     gap: .5rem;
 }
 
-/* ------------------ RESPONsIVE ------------------ */
+/* ------------------ RESPONSIVE ------------------ */
 
-/* ------------------ NAV PRINCIPAL ------------------ */
+@media (max-width: 767px) {
+
+}
 
 @media (max-width: 767px) {
     .container {
@@ -526,5 +543,16 @@ footer {
 
     #nav-principal__btn-menu {
         display: flex;
+    }
+
+    .welcome__container {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    .welcome__description {
+        align-items: center;
+        text-align: center;
     }
 }
