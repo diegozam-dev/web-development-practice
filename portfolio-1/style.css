@@ -46,6 +46,10 @@ body {
     overflow-x: hidden;
 }
 
+.scroll-block {
+    overflow: hidden;
+}
+
 /* ------------------ ELEMENTS ------------------ */
 
 h1 {
@@ -518,6 +522,23 @@ footer {
         width: var(--container-width-md);
     }
 
+    .btn-cta {
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .btn-cta:hover {
+        background-color: var(--color-contrast);
+    }
+
+    .know-more {
+        -webkit-tap-highlight-color: transparent;
+        border-color: inherit;
+    }
+
+    .know-more:hover {
+        /* border-color: transparent; */
+    }
+
     /* ------------------ NAV PRINCIPAL ------------------ */
 
     #nav-principal {
@@ -555,6 +576,21 @@ footer {
 
     .nav-principal__menu .menu__item::after {
         background-color: transparent;
+    }
+
+    .nav-principal__menu .menu__item a {
+        width: 100%;
+        height: 100%;
+        padding-right: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    .nav-principal__menu .menu__item a:active {
+        background-color: var(--color-primary-850);
+        
     }
 
     .menu-open {
