@@ -1,6 +1,7 @@
 const navPrincipal = document.querySelector('#nav-principal');
 const navPrincipalBtnMenu = document.querySelector('#nav-principal__btn-menu');
 const navPrincipalMenu = document.querySelector('.nav-principal__menu');
+const menuItems = document.querySelectorAll('.nav-principal__menu .menu__item');
 
 const openAndCloseMenu = () => {
     navPrincipalBtnMenu.classList.toggle('btn-menu-open');
@@ -35,6 +36,6 @@ window.addEventListener('resize', (e) => {
     if(document.documentElement.scrollWidth >= 767) {
         resetNavMenu();
     }
-})
+});
 
-
+menuItems.forEach(item => item.addEventListener('click', openAndCloseMenu));
