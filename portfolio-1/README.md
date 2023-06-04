@@ -1,5 +1,3 @@
-ECHO est� activado.
-
 # Portfolio #1
 Copié una idea de portafolio que ví en pinterest.
 
