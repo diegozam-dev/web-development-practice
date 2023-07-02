@@ -543,6 +543,7 @@ footer {
 
     .nav-principal__container {
         position: relative;
+        top: 0;
         width: 100vw;
         padding: 0 2rem;
     }

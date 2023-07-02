@@ -13,6 +13,8 @@ const btnCancel = document.querySelector('#btn-cancel');
 /* Cada vez que se carge la página se obtendrán todos las tareas guardadas anteriormente
    en caso de existir alguna de renderizará el to-do list. */
 window.addEventListener('load', () => {
+    if(JSON.parse(localStorage.getItem('todoList')) === null) save();
+
     todoList = JSON.parse(localStorage.getItem('todoList'));
     render();
     todoFormInput.focus();
@@ -21,7 +23,6 @@ window.addEventListener('load', () => {
 /* Permitirá el ingreso de tareas al pulsar Enter siempre que el input no esté vacío. */
 todoFormInput.addEventListener('keyup', (e) => {
     let valueInput = e.target.value.trimStart();
-    console.log(valueInput);
     if(valueInput && e.keyCode === 13) {
         addTodo(valueInput);
         save();
@@ -153,8 +154,13 @@ function render() {
     tasksCompletedDiv.innerHTML = '';
 
     // Separamos las tareas completadas y las no completadas.
-    let tasksUncompleted = todoList.filter(item => item.checked === false);
-    let tasksCompleted = todoList.filter(item => item.checked === true);
+    let tasksUncompleted = [];
+    let tasksCompleted = [];
+
+    if(todoList !== null) {
+        tasksUncompleted = todoList.filter(item => item.checked === false);
+        tasksCompleted = todoList.filter(item => item.checked === true);
+    }
 
     // En caso de no existir tareas por completar se crea un elemento 
     // que mustre el mensaje de que no hay tareas que hacer. 
